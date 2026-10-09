@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-AO">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Cadastre a sua empresa no Portal IDAI Negócio."
+    />
+    <title>Cadastrar empresa — IDAI Creative</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portal.css" />
+    <link rel="stylesheet" href="portal-v21.css" />
+  </head>
+  <body>
+    <div class="page-loader"><img src="assets/idai-triangle.png" alt="" /></div>
+    <main class="register-wrap">
+      <section class="register-intro">
+        <a class="brand" href="index.html"
+          ><img src="assets/idai-triangle.png" alt="" /><span
+            >IDAI <span>CREATIVE</span></span
+          ></a
+        >
+        <span class="eyebrow">Portal IDAI Negócio</span>
+        <h1>Vamos conhecer a sua empresa.</h1>
+        <p>
+          Crie o perfil empresarial para solicitar serviços, acompanhar
+          projetos, aprovar conteúdos e visualizar a evolução digital da sua
+          marca.
+        </p>
+        <ol class="register-steps">
+          <li><b>01</b><span>Preenche os dados da empresa</span></li>
+          <li><b>02</b><span>A IDAI analisa e aprova o cadastro</span></li>
+          <li><b>03</b><span>Recebe acesso ao painel empresarial</span></li>
+        </ol>
+        <p class="prototype-warning">
+          <b>Versão de demonstração:</b> os dados são guardados somente neste
+          navegador. A versão de produção utilizará autenticação e base de dados
+          protegidas.
+        </p>
+      </section>
+      <section class="register-card">
+        <div id="registration-form-wrap">
+          <span class="eyebrow">CADASTRO EMPRESARIAL</span>
+          <h2>Informações principais</h2>
+          <form id="register-form" class="form-grid">
+            <div class="field">
+              <label for="companyName">Nome da empresa *</label
+              ><input
+                id="companyName"
+                name="companyName"
+                required
+                maxlength="100"
+                placeholder="Ex.: Studio Nzoji"
+              />
+            </div>
+            <div class="field">
+              <label for="responsibleName">Responsável *</label
+              ><input
+                id="responsibleName"
+                name="responsibleName"
+                required
+                maxlength="100"
+                placeholder="Nome completo"
+              />
+            </div>
+            <div class="field">
+              <label for="registerEmail">E-mail profissional *</label
+              ><input
+                id="registerEmail"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                placeholder="nome@empresa.com"
+              />
+            </div>
+            <div class="field">
+              <label for="phone">Telefone/WhatsApp *</label
+              ><input
+                id="phone"
+                name="phone"
+                required
+                inputmode="tel"
+                maxlength="24"
+                placeholder="+244 9XX XXX XXX"
+              />
+            </div>
+            <div class="field">
+              <label for="nif">NIF <small>(opcional)</small></label
+              ><input
+                id="nif"
+                name="nif"
+                maxlength="30"
+                placeholder="Número fiscal"
+              />
+            </div>
+            <div class="field">
+              <label for="sector">Setor de atividade *</label
+              ><select id="sector" name="sector" required>
+                <option value="">Selecione</option>
+                <option>Alimentação e catering</option>
+                <option>Comércio</option>
+                <option>Educação</option>
+                <option>Imobiliário</option>
+                <option>Moda e beleza</option>
+                <option>Saúde</option>
+                <option>Serviços profissionais</option>
+                <option>Tecnologia</option>
+                <option>Outro</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="socialLinks">Redes sociais ou website</label
+              ><input
+                id="socialLinks"
+                name="socialLinks"
+                maxlength="250"
+                placeholder="Instagram, Facebook, LinkedIn ou website"
+              />
+            </div>
+            <div class="field full">
+              <label for="digitalGoals">Principal objetivo no digital *</label
+              ><textarea
+                id="digitalGoals"
+                name="digitalGoals"
+                required
+                maxlength="800"
+                placeholder="Ex.: aumentar a notoriedade, organizar a comunicação e gerar potenciais clientes."
+              ></textarea>
+            </div>
+            <div class="field">
+              <label for="desiredPlan">Plano ou serviço pretendido *</label
+              ><select id="desiredPlan" name="desiredPlan" required>
+                <option value="">Selecione</option>
+                <option>Plano Presença</option>
+                <option>Plano Crescimento</option>
+                <option>Plano Completo</option>
+                <option>Plano personalizado</option>
+                <option>Branding e identidade visual</option>
+                <option>Produção audiovisual</option>
+                <option>Gráfica e personalizados</option>
+                <option>Ainda não sei</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="companySize">Dimensão atual</label
+              ><select id="companySize" name="companySize">
+                <option>1 pessoa</option>
+                <option>2–5 pessoas</option>
+                <option>6–20 pessoas</option>
+                <option>21–50 pessoas</option>
+                <option>Mais de 50 pessoas</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="registerPassword">Criar palavra-passe *</label
+              ><input
+                id="registerPassword"
+                name="password"
+                type="password"
+                required
+                minlength="8"
+                autocomplete="new-password"
+                placeholder="Mínimo 8 caracteres"
+              />
+            </div>
+            <div class="field">
+              <label for="confirmPassword">Confirmar palavra-passe *</label
+              ><input
+                id="confirmPassword"
+                name="confirmPassword"
+                type="password"
+                required
+                minlength="8"
+                autocomplete="new-password"
+                placeholder="Repetir palavra-passe"
+              />
+            </div>
+            <label class="check-field full"
+              ><input
+                id="acceptTerms"
+                name="acceptTerms"
+                type="checkbox"
+                required
+              /><span
+                >Confirmo que os dados são corretos e aceito ser contactado pela
+                IDAI Creative sobre este cadastro.</span
+              ></label
+            >
+            <p
+              id="register-error"
+              class="form-message error full"
+              role="alert"
+            ></p>
+            <button class="btn full" type="submit">
+              Enviar cadastro para aprovação
+            </button>
+          </form>
+          <p class="auth-back">
+            Já tem uma conta? <a href="login.html">Entrar no portal</a>
+          </p>
+        </div>
+        <div id="registration-success" class="registration-success" hidden>
+          <span class="success-icon">✓</span
+          ><span class="eyebrow">CADASTRO RECEBIDO</span>
+          <h2>Agora vamos analisar a sua empresa.</h2>
+          <p>
+            O pedido ficou com o estado <b>Aguardando aprovação</b>. Depois da
+            aprovação, poderá entrar usando o e-mail e a palavra-passe criados.
+          </p>
+          <div class="registration-reference">
+            <small>REFERÊNCIA</small
+            ><b id="registrationReference">IDAI-000000</b>
+          </div>
+          <div class="success-actions">
+            <a class="btn" href="login.html">Ir para o login</a
+            ><a
+              id="registrationWhatsapp"
+              class="btn secondary"
+              target="_blank"
+              rel="noopener"
+              >Avisar a IDAI no WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

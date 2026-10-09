@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-AO">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Entrar — IDAI Creative</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="portal.css" />
+    <link rel="stylesheet" href="portal-v21.css" />
+  </head>
+  <body>
+    <div class="page-loader"><img src="assets/idai-triangle.png" alt="" /></div>
+    <main class="login-wrap">
+      <section class="login-box">
+        <a class="brand" href="index.html"
+          ><img src="assets/idai-triangle.png" alt="" /><span
+            >IDAI <span>CREATIVE</span></span
+          ></a
+        ><span class="eyebrow">Portal IDAI Negócio</span>
+        <h1>Bem-vindo.</h1>
+        <p>
+          Acompanha projetos, metas, resultados, entregas e evolução digital da
+          tua empresa.
+        </p>
+        <form id="login-form">
+          <div class="field">
+            <label for="email">E-mail</label
+            ><input
+              id="email"
+              type="email"
+              required
+              autocomplete="email"
+              placeholder="nome@empresa.com"
+            />
+          </div>
+          <div class="field">
+            <label for="password">Palavra-passe</label
+            ><input
+              id="password"
+              type="password"
+              required
+              autocomplete="current-password"
+              placeholder="••••••••"
+            />
+          </div>
+          <p id="login-error" class="form-message error" role="alert"></p>
+          <button class="btn" type="submit" style="width: 100%">
+            Entrar no portal
+          </button>
+        </form>
+        <div class="auth-divider"><span>AINDA NÃO TEM CONTA?</span></div>
+        <a class="btn secondary auth-register" href="cadastro.html"
+          >Cadastrar a minha empresa</a
+        >
+        <div class="login-note">
+          <b>Contas de demonstração</b><br />Administrador: admin@idai.ao /
+          IDAI-Admin-2026!<br />Editor: editor@idai.ao / IDAI-Editor-2026!<br />Cliente:
+          cliente@demo.ao / Cliente-2026!<br /><br />Cadastros empresariais
+          precisam de aprovação do administrador antes do primeiro acesso.
+        </div>
+      </section>
+    </main>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

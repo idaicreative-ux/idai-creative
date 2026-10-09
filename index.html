@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cursor.css">
+  <link rel="stylesheet" href="v21.css">
 </head>
 <body>
   <div class="loader" aria-hidden="true">
@@ -25,15 +27,16 @@
       <span>IDAI <strong>CREATIVE</strong></span>
     </a>
     <nav aria-label="Navegação principal">
-      <a href="sobre.html" data-pt="Quem somos" data-en="About">Quem somos</a>
-      <a href="servicos.html" data-pt="Serviços" data-en="Services">Serviços</a>
-      <a href="plataforma.html" data-pt="Plataforma" data-en="Platform">Plataforma</a>
-      <a href="validacao.html" data-pt="Validação" data-en="Validation">Validação</a>
-      <a href="investidores.html" data-pt="Investidores" data-en="Investors">Investidores</a>
+      <a href="#inicio" data-pt="Início" data-en="Home">Início</a>
+      <a href="#solucao" data-pt="Quem somos" data-en="About">Quem somos</a>
+      <a href="#servicos" data-pt="Serviços" data-en="Services">Serviços</a>
+      <a href="#marcas" data-pt="Marcas" data-en="Brands">Marcas</a>
+      <a href="#investimento" data-pt="Investimento" data-en="Investment">Investimento</a>
+      <a href="#contacto" data-pt="Contacto" data-en="Contact">Contacto</a>
     </nav>
     <div class="header-actions">
       <button class="lang-switch" type="button" aria-label="Mudar idioma"><span>PT</span> / EN</button>
-      <a class="button button-small" href="contacto.html" data-pt="Falar connosco" data-en="Talk to us">Falar connosco</a>
+      <a class="button button-small" href="login.html" data-pt="Portal empresarial" data-en="Business portal">Portal empresarial</a>
     </div>
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
   </header>
@@ -101,8 +104,23 @@
       </div>
     </section>
 
-    <section class="platform section section-orange" id="plataforma">
+    <section class="brands section section-dark" id="marcas">
       <div class="section-number">04</div>
+      <div class="brands-intro reveal">
+        <div><p class="eyebrow" data-pt="MARCAS CRIADAS PELA IDAI" data-en="BRANDS CREATED BY IDAI">MARCAS CRIADAS PELA IDAI</p><h2 data-pt="Ideias que já começaram a ganhar forma." data-en="Ideas already beginning to take shape.">Ideias que já começaram a ganhar forma.</h2></div>
+        <p data-pt="Este espaço será atualizado com identidades, campanhas e projetos desenvolvidos pela IDAI Creative. Cada marca terá a sua história, desafio e resultado." data-en="This space will be updated with identities, campaigns and projects developed by IDAI Creative. Each brand will have its story, challenge and result.">Este espaço será atualizado com identidades, campanhas e projetos desenvolvidos pela IDAI Creative. Cada marca terá a sua história, desafio e resultado.</p>
+      </div>
+      <div class="brand-gallery reveal" aria-label="Portfólio de marcas IDAI">
+        <article class="brand-slot"><div class="brand-slot-mark"><img src="assets/idai-triangle.png" alt=""></div><span>PROJETO 01</span><h3 data-pt="Marca a adicionar" data-en="Brand coming soon">Marca a adicionar</h3><small data-pt="Identidade · Estratégia" data-en="Identity · Strategy">Identidade · Estratégia</small></article>
+        <article class="brand-slot"><div class="brand-slot-mark"><img src="assets/idai-triangle.png" alt=""></div><span>PROJETO 02</span><h3 data-pt="Marca a adicionar" data-en="Brand coming soon">Marca a adicionar</h3><small data-pt="Conteúdo · Campanha" data-en="Content · Campaign">Conteúdo · Campanha</small></article>
+        <article class="brand-slot"><div class="brand-slot-mark"><img src="assets/idai-triangle.png" alt=""></div><span>PROJETO 03</span><h3 data-pt="Marca a adicionar" data-en="Brand coming soon">Marca a adicionar</h3><small data-pt="Design · Produção" data-en="Design · Production">Design · Produção</small></article>
+        <article class="brand-slot brand-slot-cta"><span>O PRÓXIMO PODE SER O SEU</span><h3 data-pt="Vamos construir uma marca memorável?" data-en="Shall we build a memorable brand?">Vamos construir uma marca memorável?</h3><a href="briefing.html" data-pt="Começar projeto ↗" data-en="Start project ↗">Começar projeto ↗</a></article>
+      </div>
+      <p class="brands-note reveal" data-pt="Os projetos serão adicionados após autorização de cada cliente." data-en="Projects will be added after each client's authorization.">Os projetos serão adicionados após autorização de cada cliente.</p>
+    </section>
+
+    <section class="platform section section-orange" id="plataforma">
+      <div class="section-number">05</div>
       <div class="platform-copy reveal">
         <p class="eyebrow" data-pt="MVP DA PLATAFORMA" data-en="PLATFORM MVP">MVP DA PLATAFORMA</p>
         <h2 data-pt="O WhatsApp abre a porta. A plataforma organiza tudo." data-en="WhatsApp opens the door. The platform organizes everything.">O WhatsApp abre a porta. A plataforma organiza tudo.</h2>
@@ -128,7 +146,7 @@
     </section>
 
     <section class="difference section">
-      <div class="section-number">05</div>
+      <div class="section-number">06</div>
       <div class="section-heading reveal"><p class="eyebrow" data-pt="DIFERENCIAÇÃO" data-en="DIFFERENTIATION">DIFERENCIAÇÃO</p><h2 data-pt="Local na execução. Digital na escala." data-en="Local in execution. Digital at scale.">Local na execução. Digital na escala.</h2></div>
       <div class="comparison reveal">
         <div><span data-pt="Ferramentas internacionais" data-en="International tools">Ferramentas internacionais</span><h3 data-pt="Software sem execução local" data-en="Software without local execution">Software sem execução local</h3></div>
@@ -138,7 +156,7 @@
     </section>
 
     <section class="validation section section-dark" id="evidencias">
-      <div class="section-number">06</div>
+      <div class="section-number">07</div>
       <div class="validation-copy reveal">
         <p class="eyebrow" data-pt="VALIDAÇÃO ANTES DA ESCALA" data-en="VALIDATE BEFORE SCALING">VALIDAÇÃO ANTES DA ESCALA</p>
         <h2 data-pt="A candidatura será sustentada por evidências, não apenas projeções." data-en="The application will be supported by evidence, not projections alone.">A candidatura será sustentada por evidências, não apenas projeções.</h2>
@@ -156,32 +174,33 @@
       </div>
     </section>
 
-    <section class="investment section">
-      <div class="section-number">07</div>
-      <div class="investment-copy reveal"><p class="eyebrow" data-pt="INVESTIMENTO" data-en="INVESTMENT">INVESTIMENTO</p><h2 data-pt="20 milhões Kz para lançar a estrutura recomendada." data-en="20 million Kz to launch the recommended structure.">20 milhões Kz para lançar a estrutura recomendada.</h2><p data-pt="A faixa de investimento é de 15 a 25 milhões Kz, aplicada em produção audiovisual, computadores, plataforma, gráfica, infraestrutura e capital operacional." data-en="The investment range is 15 to 25 million Kz, allocated to audiovisual production, computers, platform, print, infrastructure and working capital.">A faixa de investimento é de 15 a 25 milhões Kz, aplicada em produção audiovisual, computadores, plataforma, gráfica, infraestrutura e capital operacional.</p></div>
-      <div class="funds reveal" aria-label="Aplicação do investimento">
-        <div><span data-pt="Gráfica" data-en="Print">Gráfica</span><i style="--w:66%"></i><b>6.6M</b></div>
-        <div><span data-pt="Audiovisual" data-en="Audiovisual">Audiovisual</span><i style="--w:37%"></i><b>3.7M</b></div>
-        <div><span data-pt="Computadores" data-en="Computers">Computadores</span><i style="--w:25%"></i><b>2.5M</b></div>
-        <div><span data-pt="Plataforma" data-en="Platform">Plataforma</span><i style="--w:18%"></i><b>1.8M</b></div>
-        <div><span data-pt="Infraestrutura" data-en="Infrastructure">Infraestrutura</span><i style="--w:19%"></i><b>1.9M</b></div>
-        <div><span data-pt="Operação" data-en="Operations">Operação</span><i style="--w:35%"></i><b>3.5M</b></div>
+    <section class="investment section" id="investimento">
+      <div class="section-number">08</div>
+      <div class="investment-copy reveal"><p class="eyebrow" data-pt="META DE INVESTIMENTO" data-en="INVESTMENT TARGET">META DE INVESTIMENTO</p><h2 data-pt="25 milhões Kz para construir a próxima fase da IDAI." data-en="25 million Kz to build IDAI's next phase.">25 milhões Kz para construir a próxima fase da IDAI.</h2><p data-pt="O investimento será aplicado em produção audiovisual, computadores, plataforma, gráfica, infraestrutura e capital operacional. O progresso será atualizado sempre que um novo valor for confirmado." data-en="The investment will fund audiovisual production, computers, the platform, print, infrastructure and working capital. Progress will be updated whenever a new contribution is confirmed.">O investimento será aplicado em produção audiovisual, computadores, plataforma, gráfica, infraestrutura e capital operacional. O progresso será atualizado sempre que um novo valor for confirmado.</p></div>
+      <div class="investment-tracker reveal" data-investment-tracker>
+        <div class="tracker-top"><span data-pt="CAPTADO ATÉ AGORA" data-en="RAISED SO FAR">CAPTADO ATÉ AGORA</span><b id="investmentPercent">0%</b></div>
+        <div class="tracker-value"><strong id="investmentRaised">0 Kz</strong><small><span data-pt="de" data-en="of">de</span> <b id="investmentTarget">25.000.000 Kz</b></small></div>
+        <div class="tracker-bar" role="progressbar" aria-valuemin="0" aria-valuemax="25000000" aria-valuenow="0" aria-label="Progresso da meta de investimento"><i id="investmentBar"></i></div>
+        <div class="tracker-meta"><span><small data-pt="FALTA CAPTAR" data-en="REMAINING">FALTA CAPTAR</small><b id="investmentRemaining">25.000.000 Kz</b></span><span><small data-pt="APOIADORES" data-en="SUPPORTERS">APOIADORES</small><b id="investmentSupporters">0</b></span><span><small data-pt="ÚLTIMA ATUALIZAÇÃO" data-en="LAST UPDATE">ÚLTIMA ATUALIZAÇÃO</small><b id="investmentUpdated">08 OUT 2026</b></span></div>
+        <a class="button tracker-button" href="https://wa.me/244959266063?text=Olá%20IDAI,%20gostaria%20de%20saber%20mais%20sobre%20a%20oportunidade%20de%20investimento." target="_blank" rel="noopener" data-pt="Quero conhecer a oportunidade" data-en="I want to explore the opportunity">Quero conhecer a oportunidade</a>
       </div>
+      <div class="investment-use reveal" aria-label="Aplicação prevista do investimento"><span data-pt="APLICAÇÃO PREVISTA" data-en="PLANNED USE">APLICAÇÃO PREVISTA</span><div><b>Gráfica</b><b>Audiovisual</b><b>Computadores</b><b>Plataforma</b><b>Infraestrutura</b><b>Operação</b></div></div>
     </section>
 
-    <section class="cta section">
+    <section class="cta section" id="contacto">
       <img src="assets/idai-triangle.png" alt="Símbolo IDAI Creative" class="cta-logo reveal">
       <div class="reveal"><p class="eyebrow" data-pt="PENSOU? IDAI." data-en="THINK IT. IDAI BUILDS IT.">PENSOU? IDAI.</p><h2 data-pt="Vamos transformar ideias em negócios preparados para crescer." data-en="Let’s turn ideas into businesses ready to grow.">Vamos transformar ideias em negócios preparados para crescer.</h2></div>
-      <a class="button button-light reveal" href="https://wa.me/244959266063?text=Ol%C3%A1%20IDAI%20Creative%2C%20quero%20falar%20sobre%20a%20plataforma." target="_blank" rel="noopener"><span data-pt="Conversar no WhatsApp" data-en="Chat on WhatsApp">Conversar no WhatsApp</span> ↗</a>
+      <a class="button button-light reveal" href="briefing.html"><span data-pt="Receber plano personalizado" data-en="Get a personalized plan">Receber plano personalizado</span> ↗</a>
     </section>
   </main>
 
   <footer>
     <a class="brand" href="#inicio"><img src="assets/idai-triangle.png" alt=""><span>IDAI <strong>CREATIVE</strong></span></a>
     <p>Marketing · Design · Produção · Tecnologia</p>
-    <div><a href="tel:+244959266063">+244 959 266 063</a><a href="https://wa.me/244959266063" target="_blank" rel="noopener">WhatsApp ↗</a></div>
+    <div><a href="tel:+244959266063">+244 959 266 063</a><a href="https://wa.me/244959266063" target="_blank" rel="noopener">WhatsApp ↗</a><a href="https://www.instagram.com/idaicreative/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.linkedin.com/company/idaicreative/" target="_blank" rel="noopener">LinkedIn ↗</a></div>
     <small>© <span id="year"></span> IDAI Creative. Luanda, Angola.</small>
   </footer>
+  <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
